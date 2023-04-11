@@ -39,7 +39,7 @@ class SR:
         self.computer_voice(x.__next__())
         take = self.take_input()
         choice = take
-        if choice == "yes":
+        if choice == "yes" or "00":
             self.computer_voice(x.__next__())
             time = int(self.take_input())
             print(time)
