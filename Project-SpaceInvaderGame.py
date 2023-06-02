@@ -72,7 +72,7 @@ class Alien:
 
     def checkCollision(self, game):
         for rocket in game.ammo:
-            if (self.x + self.size > rocket.x > self.x - self.size and self.y + self.size > rocket.y > self.y - self.size):
+            if self.x + self.size > rocket.x > self.x - self.size and self.y + self.size > rocket.y > self.y - self.size:
                 game.ammo.remove(rocket)
                 game.other_world_creatures.remove(self)
 

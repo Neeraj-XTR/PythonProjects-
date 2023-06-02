@@ -38,7 +38,7 @@ class IDSD:
             #if "immediate" or "shut" or "down" or "shutdown" or "Shut" or "down" or " media" in choice:
             if "00" or "Zero" or "ZERO" or "zero" in choice:
                 self.comp_vc("Shutting down the computer in T minus 3 seconds")
-                os.system(f'shutdown /s /t 30')
+                os.system(f'shutdown /s /t 1')
                 rep = 0
 
 
